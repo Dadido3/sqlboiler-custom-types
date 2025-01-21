@@ -4,7 +4,7 @@ This module contains some (one for now) custom type(s) to be used with SQLBoiler
 
 ## Types
 
-- `Shopspring/Decimal`: Replacement for SQLBoilers decimal type using [shopspring/decimal](github.com/shopspring/decimal) instead of [ericlagergren/decimal](github.com/ericlagergren/decimal).
+- `shopspring/Decimal`: Replacement for SQLBoilers decimal type using [shopspring/decimal](https://github.com/shopspring/decimal) instead of [ericlagergren/decimal](https://github.com/ericlagergren/decimal).
 
 ## Usage
 
