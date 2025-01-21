@@ -11,25 +11,16 @@ This module contains some (one for now) custom type(s) to be used with SQLBoiler
 Add the following to your `sqlboiler.toml`:
 
 ```toml
+# Use shopspring/decimal instead of ericlagergren/decimal.
 [[types]]
-  [types.match]
-    type = "types.Decimal"
-    nullable = false
-
-  [types.replace]
-    type = "shopspring.Decimal"
-
-  [types.imports]
-    third_party = ['"github.com/Dadido3/sqlboiler-custom-types/shopspring"']
+  match.type = "types.Decimal"
+  match.nullable = false
+  replace.type = "shopspring.Decimal"
+  imports.third_party = ['"github.com/Dadido3/sqlboiler-custom-types/shopspring"']
 
 [[types]]
-  [types.match]
-    type = "types.NullDecimal"
-    nullable = true
-
-  [types.replace]
-    type = "shopspring.NullDecimal"
-
-  [types.imports]
-    third_party = ['"github.com/Dadido3/sqlboiler-custom-types/shopspring"']
+  match.type = "types.NullDecimal"
+  match.nullable = true
+  replace.type = "shopspring.NullDecimal"
+  imports.third_party = ['"github.com/Dadido3/sqlboiler-custom-types/shopspring"']
 ```
